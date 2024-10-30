@@ -22,7 +22,7 @@ SwiftLoan is a comprehensive loan-taking and recovery platform that simplifies t
 
 ## Technology Stack
 
-- **Frontend**: The user interface is hosted at: [SwiftLoan App](https://loquacious-smakager-3cef37.netlify.app/)
+- **Frontend**: The user interface is hosted at: [SwiftLoan App](https://anuj-kumar-loan-app.netlify.app/)
 - **Backend**: Secure server-side functionality is powered by JWT for user authentication and session management.
 
 ## How to Use
@@ -41,7 +41,7 @@ SwiftLoan is a comprehensive loan-taking and recovery platform that simplifies t
 - Uses **JWT** for authentication, ensuring a secure and reliable loan application process.
 
 ## Deployment
-The application is deployed and hosted at: [SwiftLoan App](https://loquacious-smakager-3cef37.netlify.app/)
+The application is deployed and hosted at: [SwiftLoan App](https://anuj-kumar-loan-app.netlify.app/)
 
 
 
