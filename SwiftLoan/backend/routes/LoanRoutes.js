@@ -13,7 +13,7 @@ const router = express.Router();
 router.route("/:id").post(protect, createLoan);
 router.get("/getDetails", protect, getDetails); 
 router.post("/getDetails/:id", protect, getDetailsUser); 
-router.put("/updateLoan/:id", protect, UpdateLoan);  // Use PUT for updating
+router.put("/updateLoan/:id", protect, UpdateLoan);  // Use PUT to update
 router.delete("/deleteLoan/:id", protect, DeleteLoan);  // Correct the delete route with :id
 
 module.exports = router;
