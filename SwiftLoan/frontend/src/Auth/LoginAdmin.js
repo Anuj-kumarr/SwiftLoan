@@ -25,7 +25,7 @@ const LoginAdmin = () => {
           };
         
           const {data} = await axios.post(
-            "/api/admin/login",
+            "https://swiftloan-fzk4.onrender.com/api/admin/login",
             {email,password },
              config
             ); 
