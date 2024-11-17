@@ -31,7 +31,7 @@ const MainUserPage = ()=>{
           };
       
           const { data: userData } = await axios.post(
-            `/api/user/get/${userId}`, 
+            `https://swiftloan-fzk4.onrender.com/api/user/get/${userId}`, 
             {userId}, 
             config
           );
@@ -70,7 +70,7 @@ const MainUserPage = ()=>{
        };
    
        const {data: userData } = await axios.post(
-         `/api/user/get/${userId}`, 
+         `https://swiftloan-fzk4.onrender.com/api/user/get/${userId}`, 
          {userId},
          config
        );
