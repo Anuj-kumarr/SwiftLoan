@@ -35,7 +35,7 @@ const UserPayUpdates = ()=>{
          };
      
          const {data: userData } = await axios.post(
-           `/api/user/get/${userId}`, 
+           `https://swiftloan-fzk4.onrender.com/api/user/get/${userId}`, 
            {userId},
            config
          );
@@ -43,7 +43,7 @@ const UserPayUpdates = ()=>{
          const loanId = userData.loanId;
          console.log(loanId);
 
-         const { data } = await axios.post(`/api/loan/getDetails/${loanId}`,{}, config);
+         const { data } = await axios.post(`https://swiftloan-fzk4.onrender.com/api/loan/getDetails/${loanId}`,{}, config);
          console.log(data.loan.Amt_chart);
          setChart(data.loan.Amt_chart);
          
