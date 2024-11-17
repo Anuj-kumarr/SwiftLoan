@@ -14,7 +14,10 @@ connectDB();
 const app = express();
 
 app.use(express.json());
-
+app.use(cors({
+     origin: 'https://dazzling-creponne-1de514.netlify.app', // Frontend origin
+     credentials: true,
+   }));
 
 app.get("/", (req, res)=>{
      res.send("server is running ");
