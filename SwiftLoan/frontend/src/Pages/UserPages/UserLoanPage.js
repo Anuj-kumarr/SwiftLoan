@@ -35,7 +35,7 @@ const UserLoanPage = () => {
        };
    
        const { data: userData } = await axios.post(
-         `/api/loan/${userId}`, 
+         `https://swiftloan-fzk4.onrender.com/api/loan/${userId}`, 
          {loan_amt,time}, 
          config
        );
