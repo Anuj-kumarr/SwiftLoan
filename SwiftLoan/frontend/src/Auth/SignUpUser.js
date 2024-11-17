@@ -69,7 +69,7 @@ const SignUpUser = () => {
         };
     
         const { data } = await axios.post(
-          "/api/user",
+          "https://swiftloan-fzk4.onrender.com/api/user",
           { name, email, phNumber, sex, password, pic, address },
           config
         );
