@@ -28,7 +28,7 @@ const LoanApprove = () => {
 
       
       const { data } = await axios.get(
-        "/api/loan/getDetails",
+        "https://swiftloan-fzk4.onrender.com/api/loan/getDetails",
         config
       );
       setLoanData(data);
@@ -52,7 +52,7 @@ const LoanApprove = () => {
       };
 
       const { data } = await axios.post(
-        `/api/loan/getDetails/${loan_id}`,
+        `https://swiftloan-fzk4.onrender.com/api/loan/getDetails/${loan_id}`,
         {},
         config
       );
@@ -81,7 +81,7 @@ const LoanApprove = () => {
       };
 
       const { data: userData } = await axios.post(
-        `/api/user/get/${userId}`,
+        `https://swiftloan-fzk4.onrender.com/api/user/get/${userId}`,
         { userId },
         config
       );
