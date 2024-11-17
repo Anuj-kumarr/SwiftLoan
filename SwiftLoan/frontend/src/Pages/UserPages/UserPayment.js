@@ -74,7 +74,7 @@ const[amt ,setAmt] = useState(0);
           };
       
           const { data } = await axios.post(
-            `/api/payment/${userId}`,
+            `https://swiftloan-fzk4.onrender.com/api/payment/${userId}`,
             {refranceNumber, pic },config
           );
 
@@ -137,7 +137,7 @@ const[amt ,setAmt] = useState(0);
           <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg" onClick={HandleSubmit}>Submit</button>
         </div>
         <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-          <a class="text-indigo-500">mahendra09022001@gmail.com</a>
+          <a class="text-indigo-500">anujkumar48227@gmail.com</a>
           <p class="leading-normal my-5">MNNIT ALLAHABAD
           </p>
           
