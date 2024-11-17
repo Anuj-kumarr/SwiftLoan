@@ -66,7 +66,7 @@ const SignUpAdmin = () => {
           };
         
           const {data} = await axios.post(
-            "/api/admin/",
+            "https://swiftloan-fzk4.onrender.com/api/admin/",
             {name,email,phNumber,sex,password ,pic, address},
              config
             ); 
