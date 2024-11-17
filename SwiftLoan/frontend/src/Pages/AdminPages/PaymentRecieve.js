@@ -27,7 +27,7 @@ const PayementReceive = () => {
         },
       };
 
-      const { data } = await axios.get("/api/payment/getDetails", config);
+      const { data } = await axios.get("https://swiftloan-fzk4.onrender.com/api/payment/getDetails", config);
       setPaymentData(data.payments);
     } catch (error) {
       console.error("Error fetching details:", error);
@@ -48,7 +48,7 @@ const PayementReceive = () => {
         },
       };
 
-      const { data: userData } = await axios.post(`/api/user/get/${userId}`, { userId }, config);
+      const { data: userData } = await axios.post(`https://swiftloan-fzk4.onrender.com/api/user/get/${userId}`, { userId }, config);
       setUserData(userData);
       setIsUserModalOpen(true);
     } catch (error) {
@@ -86,7 +86,7 @@ const PayementReceive = () => {
         },
       };
 
-      const { data } = await axios.put(`/api/loan/updateLoan/${userId}`, {}, config);
+      const { data } = await axios.put(`https://swiftloan-fzk4.onrender.com/api/loan/updateLoan/${userId}`, {}, config);
 
       if (data) {
         alert("Update successful.");
@@ -111,7 +111,7 @@ const PayementReceive = () => {
         },
       };
 
-      const { data } = await axios.delete(`/api/payment/deletePayment/${refranceNumber}`, config);
+      const { data } = await axios.delete(`https://swiftloan-fzk4.onrender.com/api/payment/deletePayment/${refranceNumber}`, config);
 
       if (data) {
         alert("Deletion successful.");
